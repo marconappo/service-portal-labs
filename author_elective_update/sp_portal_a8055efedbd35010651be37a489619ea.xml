@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="DELETE">
+        <css_variables>$grid-gutter-width: 15px !default;</css_variables>
+        <default>false</default>
+        <homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage>
+        <icon>119fd2795bd56300a9ad49ed5a62bc40</icon>
+        <kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
+        <logo>76ab92395bd56300a9ad49ed5a62bc9e</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config>[{&#13;
+	"tagline": {&#13;
+		"table" : "sp_instance",&#13;
+		"sys_id" : "34fe3d96cb20020000f8d856634c9cf4",&#13;
+		"field" : "title"&#13;
+	},&#13;
+	"hero_background": {&#13;
+		"table" : "sp_container",&#13;
+		"sys_id" : "be98a8d2cb20020000f8d856634c9c63",&#13;
+		"field" : "background_image"&#13;
+	},&#13;
+	"readonly_variable_editor": "false"&#13;
+}]</quick_start_config>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 20:28:00</sys_created_on>
+        <sys_id>a8055efedbd35010651be37a489619ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Service Portal </sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_portal_a8055efedbd35010651be37a489619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 20:28:49</sys_updated_on>
+        <theme display_value="Cloud Dimensions">295392fedbd35010651be37a489619cf</theme>
+        <title>Service Portal </title>
+        <ts_index_group display_value="portal_index_group">2c3e7d1513c93300e618bfd63244b0d7</ts_index_group>
+        <url_suffix>sp</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="DELETE" query="documentkey=a8055efedbd35010651be37a489619ea"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</application>
+        <file_path/>
+        <instance_id>78494b7adb49f3082f68c5970596194d</instance_id>
+        <instance_name>dev84436</instance_name>
+        <name>sp_portal_a8055efedbd35010651be37a489619ea</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables>$grid-gutter-width: 15px !default;</css_variables><default>false</default><homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage><icon>119fd2795bd56300a9ad49ed5a62bc40</icon><kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base><kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page><login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page><logo>76ab92395bd56300a9ad49ed5a62bc9e</logo><notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page><quick_start_config>[{&#13;
+	"tagline": {&#13;
+		"table" : "sp_instance",&#13;
+		"sys_id" : "34fe3d96cb20020000f8d856634c9cf4",&#13;
+		"field" : "title"&#13;
+	},&#13;
+	"hero_background": {&#13;
+		"table" : "sp_container",&#13;
+		"sys_id" : "be98a8d2cb20020000f8d856634c9c63",&#13;
+		"field" : "background_image"&#13;
+	},&#13;
+	"readonly_variable_editor": "false"&#13;
+}]</quick_start_config><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sc_catalog_page/><sc_category_page/><sp_chat_queue/><sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu><sqanda_knowledge_base/><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-20 20:28:00</sys_created_on><sys_id>a8055efedbd35010651be37a489619ea</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Service Portal </sys_name><sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package><sys_policy/><sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope><sys_update_name>sp_portal_a8055efedbd35010651be37a489619ea</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-20 20:28:49</sys_updated_on><theme display_value="Cloud Dimensions">295392fedbd35010651be37a489619cf</theme><title>Service Portal </title><ts_index_group display_value="portal_index_group">2c3e7d1513c93300e618bfd63244b0d7</ts_index_group><url_suffix>sp</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=a8055efedbd35010651be37a489619ea"/></record_update>]]></payload>
+        <payload_hash>1585224230</payload_hash>
+        <record_name>Service Portal </record_name>
+        <reverted_from/>
+        <source>8c558af2dbd35010651be37a489619b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 20:28:49</sys_created_on>
+        <sys_id>2835d632db175010651be37a4896198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174ad3471d80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 20:28:49</sys_updated_on>
+        <type>Service Portal</type>
+        <update_guid>6035d63240175010599503500bc97c8e</update_guid>
+        <update_guid_history>6035d63240175010599503500bc97c8e:1585224230,fc055efe0dd350100bd427528f7c72ed:-1433825336</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Portal ">08a51e32db175010651be37a48961965</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 20:30:41</sys_created_on>
+        <sys_db_object display_value="" name="sp_portal">sp_portal</sys_db_object>
+        <sys_id>1909c779060542508f6aefa8265c7004</sys_id>
+        <sys_metadata>a8055efedbd35010651be37a489619ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Portal </sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_scope_delete display_value="">52a90ad358c64ed8a0eb2e058cbd9040</sys_scope_delete>
+        <sys_update_name>sp_portal_a8055efedbd35010651be37a489619ea</sys_update_name>
+        <sys_update_version display_value="sp_portal_a8055efedbd35010651be37a489619ea">2835d632db175010651be37a4896198e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 20:30:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
