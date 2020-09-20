@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Service Portal Labs">183742bedb935010651be37a489619b7</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Search Source</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>73</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 19:27:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2837cab6dbd35010651be37a489619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search Source</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sys_app_module_2837cab6dbd35010651be37a489619aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 19:27:39</sys_updated_on>
+        <timeline_page/>
+        <title>Search Source</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</application>
+        <file_path/>
+        <instance_id>78494b7adb49f3082f68c5970596194d</instance_id>
+        <instance_name>dev84436</instance_name>
+        <name>sys_app_module_2837cab6dbd35010651be37a489619aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Service Portal Labs">183742bedb935010651be37a489619b7</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Search Source</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>73</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-20 19:27:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2837cab6dbd35010651be37a489619aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Search Source</sys_name><sys_overrides/><sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package><sys_policy/><sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope><sys_update_name>sys_app_module_2837cab6dbd35010651be37a489619aa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-20 19:27:39</sys_updated_on><timeline_page/><title>Search Source</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>736750173</payload_hash>
+        <record_name>Search Source</record_name>
+        <reverted_from/>
+        <source>8c558af2dbd35010651be37a489619b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 19:27:39</sys_created_on>
+        <sys_id>ec37cab6dbd35010651be37a489619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174acfc721e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 19:27:39</sys_updated_on>
+        <type>Module</type>
+        <update_guid>2837cab6e7d350106d6a2cdd1a4c10ab</update_guid>
+        <update_guid_history>2837cab6e7d350106d6a2cdd1a4c10ab:736750173</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Search Source">8fe7c6f6dbd35010651be37a4896194a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 19:30:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>47da9bdac1e647f99eb49e80c9205b51</sys_id>
+        <sys_metadata>2837cab6dbd35010651be37a489619aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search Source</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_scope_delete display_value="">52a90ad358c64ed8a0eb2e058cbd9040</sys_scope_delete>
+        <sys_update_name>sys_app_module_2837cab6dbd35010651be37a489619aa</sys_update_name>
+        <sys_update_version display_value="sys_app_module_2837cab6dbd35010651be37a489619aa">ec37cab6dbd35010651be37a489619ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 19:30:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
