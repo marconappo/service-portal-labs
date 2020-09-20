@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">fc76e2fedb175010651be37a4896199f</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-20 22:16:58</sys_created_on>
+        <sys_id>b4fdae72dbd75010651be37a48961996</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Something Broken</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_instance_b4fdae72dbd75010651be37a48961996</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-20 22:17:41</sys_updated_on>
+        <title>Something Broken</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<!-- ****************** --><p><br></p><!-- Something broken?  --><p><br></p><!-- ****************** --><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a title=\"Submit a new issue\" href=\"?id=sc_cat_item&amp;sys_id=3f1dd0320a0a0b99000a53f7604a2ef9\" data-mce-href=\"?id=sc_cat_item&amp;sys_id=3f1dd0320a0a0b99000a53f7604a2ef9\"><img style=\"max-width: 100%; max-height: 480px;\" src=\"cdsp_somethingbroken.png\" alt=\"\" data-mce-src=\"cdsp_somethingbroken.png\" data-mce-style=\"max-width: 100%; max-height: 480px;\"></a><br data-mce-bogus=\"1\"></p><h3 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong>Something broken?</strong></h3><p style=\"text-align: center;\" data-mce-style=\"text-align: center;\">Report an issue</p>",
+		"displayValue": "<!-- ****************** -->\n<p>&nbsp;</p>\n<!-- Something broken?  -->\n<p>&nbsp;</p>\n<!-- ****************** -->\n<p style=\"text-align: center;\"><a title=\"Submit a new issue\" href=\"?id=sc_cat_item&amp;sys_id=3f1dd0320a0a0b99000a53f7604a2ef9\"><img style=\"max-width: 100%; max-height: 480px;\" src=\"cdsp_somethingbroken.png\" alt=\"\" /></a></p>\n<h3 style=\"text-align: center;\"><strong>Something broken?</strong></h3>\n<p style=\"text-align: center;\">Report an issue</p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4fdae72dbd75010651be37a48961996"/>
+</record_update>
