@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, spUtil, $sce, $rootScope, $timeout) {
+	spUtil.setSearchPage('kb');
+	$scope.data.text = $sce.trustAsHtml($scope.data.text);
+	$timeout(function() {
+		$rootScope.$broadcast('sp.update.breadcrumbs', $scope.data.breadcrumbs);
+	});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>td {
+	padding: .5em;
+  	line-height: 1em;
+}
+
+.kb-star-on {
+  color: $fav-star-color !important;
+  text-shadow: $fav-star-outline;
+}
+
+.kb-star-off {
+  color: $fav-star-color-off !important;
+  text-shadow: $fav-star-outline;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>color</field_list>
+        <has_preview>true</has_preview>
+        <id>kb_article_modal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>KB Article Modal</name>
+        <option_schema>[{"name":"show_star_rating","default_value":"Use system properties","section":"Presentation","label":"Show star rating","type":"choice","choices":[{"label":"Yes","value":"Yes"},{"label":"No","value":"No"},{"label":"Use system properties","value":"Use system properties"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	var t = data;
+	t.isvalid = false;
+
+	var articleGR = new GlideRecord("kb_knowledge");
+	//var id = $sp.getParameter("sys_id");
+	//var id = input.sys_id; 
+	//articleGR.addQuery("sys_id", id).addOrCondition("number", id);
+	articleGR.addQuery("sys_id","3020c9b1474321009db4b5b08b9a712d");
+	articleGR.query();
+	if (!articleGR.next())
+		return;
+
+	if (!articleGR.canRead())
+		return;
+
+	t.isvalid = true;
+
+	t.category = articleGR.getValue('kb_category');
+	t.sys_id = articleGR.getUniqueValue();
+	t.showAttachments = false;
+	if (articleGR.display_attachments)
+		t.showAttachments = true;
+	t.categoryDisplay = articleGR.getDisplayValue('kb_category');
+	t.short_description = articleGR.getValue('short_description');
+	t.text = new global.KBViewModel().getArticleContentBySysId(articleGR.getUniqueValue());
+
+	t.sys_view_count = articleGR.getDisplayValue('sys_view_count');
+	t.sys_view_countValue = articleGR.getValue('sys_view_count');
+	t.author = articleGR.getDisplayValue('author');
+	t.publishedUtc = articleGR.getValue('published');
+	t.number = articleGR.getValue('number');
+	if (showStarRating())
+		t.rating = articleGR.getValue('rating');
+	t.direct = false;
+	if (articleGR.direct)
+		t.direct = true;
+
+	//get KB name of the article
+	data.kbId = [articleGR.getValue('kb_knowledge_base')];
+	data.kbName = articleGR.getDisplayValue('kb_knowledge_base');
+
+	t.breadcrumbs = [{label: t.short_description, url: '#'}];
+	if (!articleGR.kb_category.nil()) {
+		var rec = articleGR.kb_category.getRefRecord();
+		while (rec.getRecordClassName() == "kb_category") {
+			t.breadcrumbs.unshift({label: rec.getDisplayValue(), url: '?id=kb_category&kb_category=' + rec.getUniqueValue() + '&kb_id='+ data.kbId});
+			rec = rec.parent_id.getRefRecord();
+		}
+	}
+
+	var kbs = $sp.getKnowledgeBases();
+	var countOfKb= kbs.split(',').length;
+
+	data.kb_knowledge_page = $sp.getDisplayValue("kb_knowledge_page") || "kb_view";
+	if (countOfKb > 1) {
+		if (data.kbName)
+			t.breadcrumbs.unshift({label: data.kbName, url: '?id=' + data.kb_knowledge_page + '&kb_id='+ data.kbId});
+		t.breadcrumbs.unshift({label: gs.getMessage("All Knowledge Bases"), url: '?id=' + t.kb_knowledge_page});
+	} else
+		t.breadcrumbs.unshift({label: gs.getMessage("Knowledge Base"), url: '?id=' + t.kb_knowledge_page});
+
+})();
+
+function showStarRating() {
+	if (options.show_star_rating == "Yes")
+		return true;
+
+	if (options.show_star_rating == "No")
+		return false;
+
+	// check gating property for all rating options
+	if (gs.getProperty("glide.knowman.show_rating_options", "true") != "true")
+		return false;
+
+	// does user have the right role?
+	if (!gs.hasRole(gs.getProperty("glide.knowman.show_rating_options.roles")))
+		return false;
+
+	// check specific property for stars
+	if (gs.getProperty("glide.knowman.show_star_rating", "true") != "true")
+		return false;
+
+	// does user have the right role?
+	return gs.hasRole(gs.getProperty("glide.knowman.show_star_rating.roles"));
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-21 12:40:10</sys_created_on>
+        <sys_id>e9837943db931010651be37a48961978</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>KB Article Modal</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_widget_e9837943db931010651be37a48961978</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-21 13:31:37</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.isvalid" class="panel panel-{{options.color}} b">
+  <div class="panel-heading">
+      <h2 class="panel-title h4" style="overflow:hidden">
+          <span class="pull-left">{{::data.short_description}}</span>
+          <span class="pull-right">{{::data.number}}</span>
+      </h2>
+  </div>
+
+  <div class="panel-body m-b-lg wrapper-lg">
+
+    <div class="row m-b-lg b-b">
+        <span class="author pad-right" ng-if="data.author">
+          <glyph sn-char="user" class="pad-right" />
+          ${Authored by {{::data.author}}}
+        </span>
+        <span ng-if="data.sys_view_countValue == 1" class="views pad-right">
+          <span class="pad-right">&#8226;</span> <glyph sn-char="eye-open" class="pad-right" />
+          ${{{::data.sys_view_count}} View}
+        </span>
+        <span ng-if="data.sys_view_countValue > 1" class="views pad-right">
+          <span class="pad-right">&#8226;</span> <glyph sn-char="eye-open" class="pad-right" />
+          ${{{::data.sys_view_count}} Views}
+        </span>
+        <span class="published pad-right">
+          <span class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right" />
+          <sn-day-ago date="data.publishedUtc"/>
+        </span>
+        <span ng-if="data.rating > 0 && !data.direct" title="{{::data.rating}} rating">
+          <span class="pad-right">&#8226;</span>
+          <span class="sr-only">Article rating - {{::data.rating}}</span>
+          <uib-rating sp-rating ng-model="::data.rating" max="5" readonly="true" aria-hidden="true" state-on="'fa fa-star kb-star-on'" state-off="'fa fa-star kb-star-off'" />
+        </span>
+    </div>
+
+    <div ng-if="!data.direct" class="kb_article" ng-bind-html="::data.text" style="overflow-x:auto;"></div>
+
+    <h4 ng-if="data.direct">
+      ${View or download the attachments below}
+    </h4>
+    <div ng-if="::data.showAttachments || data.direct" class="b-t m-t">
+      <sp-attachment-manager table="'kb_knowledge'" sys-id="::data.sys_id" omit-edit="true"></sp-attachment-manager>
+    </div>
+
+  </div>
+</div>
+
+<div ng-if="!data.isvalid">
+  ${Article not found}
+</div>]]></template>
+    </sp_widget>
+</record_update>

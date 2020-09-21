@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spModal) {
+	/* widget controller */
+	var c = this;
+	c.openOverlay = function($event){  
+
+		//pull data-article attribute from clicked element  
+		var articleId = $event.currentTarget.dataset.article;  
+
+		//open modal  
+		spModal.open({  
+
+			//load our custom kb article widget  
+			widget: 'kb_article_modal',  
+
+			//pass article id to article widget  
+			widgetInput: { sys_id:articleId },  
+
+			//force modal to large size  
+			size: 'lg'  
+		})  
+	}
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>kb_link_modal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>KB Link Modal</name>
+        <option_schema>[{"name":"title","section":"Presentation","label":"Title","type":"string"},{"name":"link_title","section":"Data","label":"Link Title","type":"string"},{"displayValue":"Knowledge","name":"kb_article","section":"Data","default_value":"KB0000001","label":"KB Article","type":"reference","value":"kb_knowledge","ed":{"reference":"kb_knowledge"}}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-21 12:42:02</sys_created_on>
+        <sys_id>3cf375c3db931010651be37a489619ed</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>KB Link Modal</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_widget_3cf375c3db931010651be37a489619ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-21 12:44:21</sys_updated_on>
+        <template><![CDATA[<!-- ************* -->
+<!-- HTML Template -->
+<!-- ************* -->
+
+<div class="cdWidgetTitleBar">
+  <p>{{::options.title}}</p>
+</div>
+
+<div class="cdWidgetContentArea">
+  <p><a class="btn btn-info" href="javascript:void(0);"
+        data-article="{{options.kb_article}}"
+        ng-click="c.openOverlay($event)">{{::options.link_title}}
+    </a>
+  </p>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
