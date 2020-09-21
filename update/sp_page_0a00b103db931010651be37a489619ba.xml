@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>support_contacts</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-21 12:24:56</sys_created_on>
+        <sys_id>0a00b103db931010651be37a489619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>support_contacts</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_page_0a00b103db931010651be37a489619ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-21 12:24:56</sys_updated_on>
+        <title>Support Contacts - Test Page</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=0a00b103db931010651be37a489619ba"/>
+</record_update>
