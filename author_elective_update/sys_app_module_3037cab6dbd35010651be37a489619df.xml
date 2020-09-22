@@ -65,7 +65,7 @@
         <update_guid_history>3037cab614d35010c4e55009c65399e0:-2130114279</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Widget Dependency">ca080ef6dbd35010651be37a4896199e</sys_audit_delete>
+        <sys_audit_delete display_value="">ca080ef6dbd35010651be37a4896199e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-20 19:31:17</sys_created_on>

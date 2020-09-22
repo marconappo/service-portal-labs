@@ -34,16 +34,16 @@
         <sys_created_by/>
         <sys_created_on>2020-09-19 11:02:53</sys_created_on>
         <sys_id>7b951632db175010651be37a489619e8</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>174a607f3480000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-22 19:04:57</sys_updated_on>
         <type>Portal Catalog</type>
         <update_guid>3b95163290175010b32615e8262641e8</update_guid>
         <update_guid_history>3b95163290175010b32615e8262641e8:812238412</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Catalog.Service Portal">bb951632db175010651be37a489619e9</sys_audit_delete>
+        <sys_audit_delete display_value="">bb951632db175010651be37a489619e9</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-20 20:30:41</sys_created_on>

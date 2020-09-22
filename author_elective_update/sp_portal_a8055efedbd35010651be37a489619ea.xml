@@ -84,7 +84,7 @@
         <update_guid_history>6035d63240175010599503500bc97c8e:1585224230,fc055efe0dd350100bd427528f7c72ed:-1433825336</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Portal ">08a51e32db175010651be37a48961965</sys_audit_delete>
+        <sys_audit_delete display_value="">08a51e32db175010651be37a48961965</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-20 20:30:41</sys_created_on>
