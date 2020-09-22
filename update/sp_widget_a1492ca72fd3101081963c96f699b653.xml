@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.whiteText{&#13;
+  color: white;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Quick Links ITIL</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	//data.hasItilRole = gs.hasRole('itil');
+	data.hasItilRole = true;
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-22 20:32:44</sys_created_on>
+        <sys_id>a1492ca72fd3101081963c96f699b653</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Quick Links ITIL</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sp_widget_a1492ca72fd3101081963c96f699b653</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-22 20:37:10</sys_updated_on>
+        <template><![CDATA[<!-- ************* -->
+<!-- HTML Template -->
+<!-- ************* -->
+
+<div ng-show="c.data.hasItilRole">
+  <div class="cdWidgetTitleBar">
+    <p>Quick Links</p>
+  </div>
+  <div class="cdWidgetContentArea">
+    <p><a class="btn btn-info whiteText" href="?id=itsm_dashboard">ITSM Dashboard</a></p>
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>
