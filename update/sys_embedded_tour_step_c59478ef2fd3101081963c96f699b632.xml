@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>true</action>
+        <action_event>click</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">c99478ef2fd3101081963c96f699b62f</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[Click the wrench icon]]></content>
+        <guide display_value="How to Log an Incident">c66c606b2fd3101081963c96f699b674</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/cdsp?id=cd_index"}</options>
+        <order>1</order>
+        <placement>top</placement>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-22 21:22:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c59478ef2fd3101081963c96f699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_c59478ef2fd3101081963c96f699b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-22 21:22:07</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">c99478ef2fd3101081963c96f699b62f</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>cdsp</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=c59478ef2fd3101081963c96f699b632"/>
+</record_update>
