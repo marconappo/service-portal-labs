@@ -65,7 +65,7 @@
         <update_guid_history>2437cab6f0d35010ed8bf1ab5a51907c:-642633969</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Instance with Table">0be786f6dbd35010651be37a489619e8</sys_audit_delete>
+        <sys_audit_delete display_value="">0be786f6dbd35010651be37a489619e8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-20 19:30:49</sys_created_on>

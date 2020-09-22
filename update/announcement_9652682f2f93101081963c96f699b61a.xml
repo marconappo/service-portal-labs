@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="announcement">
+    <announcement action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <click_target/>
+        <details/>
+        <details_link_text/>
+        <details_page/>
+        <details_url/>
+        <dismiss_options>session_dismissible</dismiss_options>
+        <display_first>false</display_first>
+        <display_style display_value="Cloud Dimensions Corporate">5622ec6f2f93101081963c96f699b6e8</display_style>
+        <from>2020-09-20 20:02:45</from>
+        <glyph>search</glyph>
+        <glyph_alt_text/>
+        <name>Infinity Demo Days</name>
+        <public>false</public>
+        <roles/>
+        <summary>Cloud Dimensions is happy to announce the release of Infinity-our new Portable Holographic Projector (PHP). Join us all day next Monday for live demonstrations in Meeting Room Nova 3 and try the simulator yourself!&#13;
+</summary>
+        <sys_class_name>announcement</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-22 20:04:03</sys_created_on>
+        <sys_id>9652682f2f93101081963c96f699b61a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Infinity Demo Days</sys_name>
+        <sys_package display_value="Service Portal Labs" source="x_378151_sp_labs">c4558af2dbd35010651be37a489619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portal Labs">c4558af2dbd35010651be37a489619af</sys_scope>
+        <sys_update_name>announcement_9652682f2f93101081963c96f699b61a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-22 20:04:03</sys_updated_on>
+        <title>Infinity is Ready</title>
+        <to>2020-09-27 20:02:52</to>
+        <type>67eaf134e7a3320075c2a117c2f6a9d2,52fa79f8e763320075c2a117c2f6a991</type>
+    </announcement>
+    <sys_translated_text action="delete_multiple" query="documentkey=9652682f2f93101081963c96f699b61a"/>
+</record_update>

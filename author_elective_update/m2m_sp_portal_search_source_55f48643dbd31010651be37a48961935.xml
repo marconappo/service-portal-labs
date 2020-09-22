@@ -42,7 +42,7 @@
         <update_guid_history>99f4864398d31010526ab2ac14842e36:352893802</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Cloud Dimensions.Major Incidents in Progress">a0078e87dbd31010651be37a48961936</sys_audit_delete>
+        <sys_audit_delete display_value="">a0078e87dbd31010651be37a48961936</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-09-21 14:05:19</sys_created_on>
